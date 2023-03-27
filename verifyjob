@@ -14,7 +14,7 @@ spec:
       containers:
         -
           name: intelsgx-demo-job-1
-          image: quay.io/ananth935/sgxdemo
+          image: quay.io/ananth935/sgxdemo1
           imagePullPolicy: IfNotPresent
           workingDir: "/opt/intel/sgx-sample-app/"
           command: ["/opt/intel/sgx-sample-app/sgx-sample-app"]
@@ -26,4 +26,3 @@ spec:
           resources:
             limits:
               sgx.intel.com/epc: "10Mi"
-   backoffLimit: 3
